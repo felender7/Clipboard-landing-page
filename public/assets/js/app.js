@@ -4,7 +4,7 @@ window.onload = function(){
 //HERO SECTION
 let heroSubTitle = "A history of everything you copy";
 let heroDescription = "Clipboard allows you to track and organize everything you copy. </br>Instantly access your clipboard on all your devices"
-let heroLinks =  '<a href="#" class="btn btn-success btn-lg shadow-sm">Download for iOS </a> <a href="#" class="btn btn-primary btn-lg shadow-sm">Download for Mac</a>'
+let heroLinks =  '<a href="#tract-title" data-scroll  class="btn btn-success btn-lg shadow-sm">Download for iOS </a> <a href="#tract-title" data-scroll  class="btn btn-primary btn-lg shadow-sm">Download for Mac</a>'
 
 document.getElementById("hero-logo").src = "assets/img/logo.svg";
 document.getElementById("hero-subtitle").innerHTML = heroSubTitle;
@@ -74,8 +74,78 @@ document.getElementById("3-cols").innerHTML =
 <h4>Sneak preview </h4>
     <p>Quick preview of all snippets on your Clipboard for easy access</p>
 </div>
-
 `
+
+//BRAND LOGOS SECTION
+
+document.getElementById("brand-logos").innerHTML = `
+<div class="col"><img src="assets/img/logo-google.png" class="img-fluid" alt=""></div>
+<div class="col"><img src="assets/img/logo-ibm.png" class="img-fluid" alt=""></div>
+<div class="col"><img src="assets/img/logo-microsoft.png" class="img-fluid" alt=""></div>
+<div class="col"><img src="assets/img/logo-hp.png" alt="" class="img-fluid"></div>
+<div class="col"> <img src="assets/img/logo-vector-graphics.png" class="img-fluid" alt=""></div>
+`
+
+
+//DOWNLOAD APPS 
+
+let iosMacTitle="Clipboard for IOS and Mac OS";
+let iosMacDesc = "free on the App Store. Download for Mac or iOS, sync with iCloud <br> and you’re ready to start adding to your clipboard"
+let downloadLinksIosMac  =  '<a href="#" class="btn btn-success btn-lg me-2">Download for iOS </a> <a href="#" class="btn btn-primary btn-lg">Download for Mac</a>'
+
+document.getElementById("ios-mac-title").innerHTML = iosMacTitle;
+document.getElementById("ios-mac-desc").innerHTML = iosMacDesc;
+document.getElementById("download-links").innerHTML = downloadLinksIosMac;
+
+
+
+
+//FOOTER
+
+document.getElementById("footer").innerHTML=`
+
+
+<div class="container mt-10 p-3">
+<div class="row">
+    <div class="col">
+        <img src="assets/img/logo.svg" class="img-fluid" width="35px" alt="" style="
+        margin-top: 12px">
+    </div>
+    <div class="col">
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us </a></li>
+
+        </ul>
+    </div>
+    <div class="col">
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+
+        </ul>
+    </div>
+    <div class="col">
+        <ul>
+            <li><a href="#">Intall Guide</a></li>
+
+        </ul>
+    </div>
+    <div class="col">
+        <ul style="display: inline-flex; gap: 8px; padding-left: 0;">
+            <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a> </li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+`
+
+// All animations will take exactly 500ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
 
 }
 
