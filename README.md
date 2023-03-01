@@ -65,7 +65,7 @@ const proudOfThisFunc = () => {
   console.log('🎉 git pull -- your-life-together')
 }
 ```
-```nodejs
+```js
   var http = require('http');
 
   http.createServer(function (req, res) {
@@ -75,7 +75,7 @@ const proudOfThisFunc = () => {
 
 ```
 
-```terminal
+```
 firebase login
 firebase init
 firebase deploy
