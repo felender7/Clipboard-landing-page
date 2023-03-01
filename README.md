@@ -65,7 +65,7 @@ const proudOfThisFunc = () => {
   console.log('🎉 git pull -- your-life-together')
 }
 ```
-```hosting firebase
+```terminal
 firebase login
 firebase init
 firebase deploy
